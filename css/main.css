@@ -1128,6 +1128,9 @@ body.lock {
 .footer__content-2 ul li, .footer__li ul li {
   list-style: url(../img/ul_white.svg);
 }
+.footer__content-2 ul li span, .footer__li ul li span {
+  border: 1px transparent solid;
+}
 .footer__content-2 ul li:hover, .footer__li ul li:hover {
   color: var(--yellow);
 }
