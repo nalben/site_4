@@ -1,1 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РумТибет</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/calendar.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/logo.png">
+</head>
+<body>
+    <div class="site-con">
+        <div class="header-wrapper content-wrapper">
+            <div class="wrapper">
+                <header class="header" id="header">
+                    <div class="header__menu">
+                        <a href=""><img src="../img/logo.png" alt="logo"></a> 
+                        <nav class="menu-desktop">
+                            <ul>
+                                <li><a href="#header">Главная</a></li>
+                                <li><a href="#guide">Про&nbsp;гида</a></li>
+                                <li><a href="#tour">Программа&nbsp;тура</a></li>
+                                <li><a href="#price">Стоимость</a></li>
+                                <li><a href="#blog">Блог</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                            <a href="" class="a-btn-small a-btn menu-desktop-btn">Консультация</a>
+                            <a class="header__burger" id="menu-burger-btn"><img src="../img/ico_burger.svg" alt=""></a>
+                        </nav>
+                        <nav class="menu-burger-nav">
+                            <ul>
+                                <li><a href="#header">Про&nbsp;гида</a></li>
+                                <li><a href="#tour">Программа&nbsp;тура</a></li>
+                                <li><a href="#price">Стоимость</a></li>
+                                <li><a href="#blog">Блог</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                            <a><img src="../img/ico_close.svg" alt=""></a>
+                        </nav>
+                    </div>
+                    <div class="header__content">
+                        <h1>Насладись прогулкой&nbsp;в&nbsp;горах
+                        с&nbsp;командой единомышленников</h1>
+                        <a href="" class="a-btn a-btn-small a-btn-white header__content-btn">Найти программу</a>
+                        <div class="header__tour">
+                            <div class="header__tour-item header__tour-item-select">
+                                <button type="button">
+                                    Локация для тура
+                                </button>
+                                <ul>
+                                    <li data-value="1">Everest</li>
+                                    <li data-value="2">Mount Kailash</li>
+                                    <li data-value="3">Yamdrok Lake</li>
+                                    <li data-value="4">Barkhor Street</li>
+                                    <li data-value="5">Potala Palace</li>
+                                </ul>
+                                <img src="../img/ico_arrow.svg" alt="">
+                                <h6>выберите из списка</h6>
+                                <input type="hidden" name="tour_location" value="">
+                            </div>
 
+                            <div class="header__tour-item header__tour-item-select">
+                                <button type="button">
+                                    Участники
+                                </button>
+                                <ul>
+                                    <li data-value="1">4 человека</li>
+                                    <li data-value="2">5 человек</li>
+                                    <li data-value="3">6 человек</li>
+                                    <li data-value="4">7 человек</li>
+                                    <li data-value="5">8 человек</li>
+                                </ul>
+                                <img src="../img/ico_arrow.svg" alt="">
+                                <h6>минимум 4 человека</h6>
+                                <input type="hidden" name="tour_location" value="">
+                            </div>
+
+                            <div class="header__tour-item header__tour-item-calendar">
+                                <button>
+                                    Дата похода
+                                </button>
+                                <input id="date" type="text" />
+                                <img src="../img/ico_calendar.svg" alt="">
+                                <h6>укажите диапазон</h6>
+                            </div>
+
+
+                            <a href="" class="a-btn-small a-btn a-btn-white">Найти программу</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="discover-wrapper content-wrapper">
+            <div class="wrapper">
+                <section class="discover" id="guide">
+                    <div class="discover__img">
+                        <a class="discover__img-item" href="" data-video="oATZKKAYmVg">
+                            <img src="../img/landscape2.jpg" alt="">
+                            <img src="../img/ico_play.svg" alt="">
+                        </a>
+                        <a class="discover__img-item" href="" data-video="zNQ_TXI6SH0">
+                            <img src="../img/landscape1.jpg" alt="">
+                            <img src="../img/ico_play.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="discover__iframe">
+                        <div class="discover__iframe-con">
+                            <a href=""><img src="../img/ico_close.svg" alt=""></a>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dfYJownClww?si=B4vA32Srfi2-t8GL"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="discover__content">
+                        <span>о нашем походе</span>
+                        <h2>Исследуйте все горные массивы мира вместе с нами</h2>
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+                        МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                        "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                        <a href="" class="a-btn-small a-btn">Программа тура</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="leaf-wrapper content-wrapper">
+            <div class="wrapper">
+                <section class="leaf" id="tour">
+                    <div class="leaf__content">
+                        <span>наше предложение</span>
+                        <h2>Лучшие программы для тебя</h2>
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+                        МакКлинток, профессор латыни из колледжа.</p>
+                        <div class="leaf__item">
+                            <img src="../img/ico1.svg" alt="">
+                            <div class="leaf__item-content">
+                                <h5>Опытный Гид</h5>
+                                <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий
+                                активизации.</p>
+                            </div>
+                        </div>
+                        <div class="leaf__item">
+                            <img src="../img/ico2.svg" alt="">
+                            <div class="leaf__item-content">
+                                <h5>Безопасный поход</h5>
+                                <p>Наши маршруты тщательно проверены и сопровождаются инструкторами, знающими особенности горной местности Тибета.</p>
+                            </div>
+                        </div>
+                        <div class="leaf__item">
+                            <img src="../img/ico3.svg" alt="">
+                            <div class="leaf__item-content">
+                                <h5>Лояльные цены</h5>
+                                <p>Мы предлагаем прозрачные условия и доступные туры без скрытых платежей — всё включено для комфортного путешествия.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="a-btn a-btn-small">Стоимость программ</a>
+                    </div>
+                    <div class="leaf__img">
+                        <img src="../img/leaf1.jpg" alt="">
+                        <img src="../img/leaf2.jpg" alt="">
+                        <img src="../img/leaf3.jpg" alt="">
+                        <img src="../img/leaf4.jpg" alt="">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="card-wrapper content-wrapper">
+            <div class="wrapper">
+                <section class="card" id="price">
+                    <span>по версии отдыхающих</span>
+                    <h2>Популярные направления</h2>
+                        <div class="slider">
+                            <div class="swiper-container card-swcon">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slider__slide card__item" style="background-image: url(../img/card1.jpg);">
+                                        <div class="card__item-star">
+                                            <img src="../img/ico_star.svg" alt="">
+                                            <h4>4.9</h4>
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__content-con">
+                                                <div class="card__content-price-con">
+                                                    <div class="card__content-price">
+                                                        <h3>Озеро&nbsp;возле&nbsp;гор</h3>
+                                                        <h4>романтическое&nbsp;приключение</h4>
+                                                    </div>
+                                                    <span>480&nbsp;$</span>
+                                                </div>
+                                                <div class="card__content-dics">
+                                                    <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+                                                        МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
+                                                        Lorem Ipsum,
+                                                        "consectetur"и занялся его поисками в классической латинской литературе.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="" class="a-btn a-btn-small">Программа&nbsp;тура</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slider__slide card__item" style="background-image: url(../img/card2.jpg);">
+                                        <div class="card__item-star">
+                                            <img src="../img/ico_star.svg" alt="">
+                                            <h4>4.5</h4>
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__content-con">
+                                                <div class="card__content-price-con">
+                                                    <div class="card__content-price">
+                                                        <h3>Ночь&nbsp;в&nbsp;горах</h3>
+                                                        <h4>в&nbsp;компании&nbsp;друзей</h4>
+                                                    </div>
+                                                    <span>480&nbsp;$</span>
+                                                </div>
+                                                <div class="card__content-dics">
+                                                    <p>Это незабываемое приключение среди высоких пиков и звёздного неба. Трещащий костёр, ароматный чай и тёплые разговоры до
+                                                    утра создают особую атмосферу уюта и свободы. Такие вечера остаются в памяти надолго — когда время замирает, а рядом
+                                                    только близкие люди и бескрайние горы. Это возможность сбежать от суеты и почувствовать настоящую связь с природой и
+                                                    друг с другом.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="" class="a-btn a-btn-small">Программа&nbsp;тура</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slider__slide card__item" style="background-image: url(../img/card3.jpg);">
+                                        <div class="card__item-star">
+                                            <img src="../img/ico_star.svg" alt="">
+                                            <h4>5.0</h4>
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__content-con">
+                                                <div class="card__content-price-con">
+                                                    <div class="card__content-price">
+                                                        <h3>Йога&nbsp;в&nbsp;горах</h3>
+                                                        <h4>для&nbsp;тех,&nbsp;кто&nbsp;забоится&nbsp;о&nbsp;себе</h4>
+                                                    </div>
+                                                    <span>480&nbsp;$</span>
+                                                </div>
+                                                <div class="card__content-dics">
+                                                    <p>Практика йоги на высоте дарит не только свежий воздух и умиротворение, но и глубокое ощущение внутренней гармонии.
+                                                    Ровное дыхание, тишина и величие гор помогают отвлечься от повседневного шума и сконцентрироваться на себе. Это
+                                                    идеальный способ восстановить силы, обрести баланс и почувствовать, как тело и разум работают в едином ритме — ради тебя
+                                                    самого.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="" class="a-btn a-btn-small">Программа&nbsp;тура</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <center><a href="" class="a-btn a-btn-small">Рейтинг направлений</a></center>
+                </section>
+            </div>
+        </div>
+        <div class="blog-wrapper content-wrapper">
+            <div class="wrapper">
+                <section class="blog" id="blog">
+                    <span>делимся впечатлениями</span>
+                    <h2>Блог о путешествиях</h2>
+                    <div class="slider">
+                        <div class="swiper-container blog-swcon">
+                            <div class="swiper-wrapper blog__container">
+
+                                <div class="blog__item swiper-slide slider__slide">
+                                    <img src="../img/blog1.jpg" alt="">
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-content-con">
+                                            <h3>Красивая Италя, какая она в реальности?</h3>
+                                            <p>
+                                                Для современного мира базовый вектор развития предполагает независимые способы реализации
+                                                соответствующих условий
+                                                активизации.
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-content-info">
+                                            <span>01/04/2023</span>
+                                            <span>читать статью</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide slider__slide">
+                                    <img src="../img/blog2.jpg" alt="">
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-content-con">
+                                            <h3>Долой сомнения! Весь мир открыт для вас!</h3>
+                                            <p>
+                                                Для современного мира базовый вектор развития предполагает независимые способы реализации
+                                                соответствующих условий
+                                                активизации ... независимые способы реализации соответствующих условий активизации ...Для современного
+                                                мира базовый
+                                                вектор развития предполагает независимые способы реализации соответствующих условий активизации ...
+                                                независимые способы
+                                                реализации соответствующих условий активизации ...
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-content-info">
+                                            <span>01/04/2023</span>
+                                            <span>читать статью</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide slider__slide">
+                                    <img src="../img/blog3.jpg" alt="">
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-content-con">
+                                            <h3>Как подготовиться к путешествию в одиночку?</h3>
+                                            <p>
+                                                Для современного мира базовый вектор развития предполагает.
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-content-info">
+                                            <span>01/04/2023</span>
+                                            <span>читать статью</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide slider__slide">
+                                    <img src="../img/blog4.jpg" alt="">
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-content-con">
+                                            <h3>Индия ... летим?</h3>
+                                            <p>
+                                                Для современного мира базовый.
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-content-info">
+                                            <span>01/04/2023</span>
+                                            <span>читать статью</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="a-btn a-btn-big">Другие материалы</a>
+                </section>
+            </div>
+        </div>
+        <div class="grid-wrapper content-wrapper">
+            <div class="wrapper">
+                <section class="grid">
+                    <span>фото-отчет</span>
+                    <h2>Делимся впечатлениями</h2>
+                    <div class="slider">
+                        <div class="swiper-container grid-swcon">
+                            <div class="swiper-wrapper grid__container">
+                                <div class="swiper-slide slider__slide grid__item grid__item-1">
+                                    <img src="../img/grid1.jpg" alt="">
+                                    <img src="../img/ico_zoom.svg" alt="">
+                                    <img src="../img/ico_pointer.svg" alt="">
+                                </div>
+                                <div class="swiper-slide slider__slide grid__item grid__item-2">
+                                    <img src="../img/grid2.jpg" alt="">
+                                    <img src="../img/ico_zoom.svg" alt="">
+                                    <img src="../img/ico_pointer.svg" alt="">
+                                </div>
+                                <div class="swiper-slide slider__slide grid__item grid__item-3">
+                                    <img src="../img/grid3.jpg" alt="">
+                                    <img src="../img/ico_zoom.svg" alt="">
+                                    <img src="../img/ico_pointer.svg" alt="">
+                                </div>
+                                <div class="swiper-slide slider__slide grid__item grid__item-4">
+                                    <img src="../img/grid4.jpg" alt="">
+                                    <img src="../img/ico_zoom.svg" alt="">
+                                    <img src="../img/ico_pointer.svg" alt="">
+                                </div>
+                                <div class="swiper-slide slider__slide grid__item grid__item-5">
+                                    <img src="../img/grid5.jpg" alt="">
+                                    <img src="../img/ico_zoom.svg" alt="">
+                                    <img src="../img/ico_pointer.svg" alt="">
+                                </div>
+                                <div class="swiper-slide slider__slide grid__item grid__item-6">
+                                    <img src="../img/grid6.jpg" alt="">
+                                    <img src="../img/ico_zoom.svg" alt="">
+                                    <img src="../img/ico_pointer.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="a-btn a-btn-big">Наш pinterest</a>
+                </section>
+            </div>
+        </div>
+        <div class="footer-feedback-wrapper content-wrapper">
+            <div class="wrapper">
+                <section class="footer__feedback footer__feedback-mobile">
+                    <div class="footer__feedback-left">
+                        <span>фото-отчет</span>
+                        <h3>Делимся впечатлениями</h3>
+                    </div>
+                    <div class="footer__feedback-right">
+                        <h5>Введите e-mail адрес</h5>
+                        <div class="footer__feedback-input">
+                            <input type="email" placeholder="name@domain.com">
+                            <a href="" class="a-btn a-btn-small">Подписаться на новости</a>
+                        </div>
+                        <p>подписываясь на новости, вы автоматически соглашаетесь с <span>условиями обработки персональных данных</span>
+                            и <span>правилами рекламных рассылок</span></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer-wrapper content-wrapper">
+            <div class="wrapper">
+                <footer class="footer" id="contacts">
+                    <div class="footer__feedback footer__feedback-desktop">
+                        <div class="footer__feedback-left">
+                            <span>актуально</span>
+                            <h3>Получайте полезные рассылки о путешествиях</h3>
+                        </div>
+                        <div class="footer__feedback-right">
+                            <h5>Введите e-mail адрес</h5>
+                            <div class="footer__feedback-input">
+                                <input type="email" placeholder="name@domain.com">
+                                <a href="" class="a-btn a-btn-small">Подписаться на новости</a>
+                            </div>
+                            <p>подписываясь на новости, вы автоматически соглашаетесь с <span>условиями обработки персональных данных</span> и <span>правилами рекламных рассылок</span></p>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <div class="footer__content-1">
+                            <h4>Компания «РумТибет»</h4>
+                            <p>
+                                Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+                                МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+                            </p>
+                            <div class="footer__info">
+                                <span>info@domain.com</span>
+                                <span>+7 (123) 456-78-90</span>
+                            </div>
+                            <div class="footer__media">
+                                <a href=""><img src="../img/ico_telegram.svg" alt=""></a>
+                                <a href=""><img src="../img/ico_vk.svg" alt=""></a>
+                                <a href=""><img src="../img/ico_pinterest.svg" alt=""></a>
+                                <a href=""><img src="../img/ico_skype.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="footer__content-2 footer__li">
+                            <h4>Наши услуги</h4>    
+                            <ul>
+                                <a href=""><li>Прогулки в горы летом</li></a>
+                                <a href=""><li>Зимние походы в горы</li></a>
+                                <a href=""><li>Посещение храмов в горах</li></a>
+                                <a href=""><li>Экстремальные виды туризма</li></a>
+                                <a href=""><li>Походы в джунглях Амазонии <span>new</span></li></a>
+                                <a href=""><li>Поездка в Африку</li></a>
+                            </ul>
+                        </div>
+                        <div class="footer__content-3 footer__li">
+                            <h4>Важно для путешествий</h4>
+                            <ul>
+                                <a href=""><li>Как собрать в долгий поход?</li></a>
+                                <a href=""><li>Жизненно важные предметы для похода</li></a>
+                                <a href=""><li>Медицинская страховка, гарантии безопасности</li></a>
+                                <a href=""><li>Если вы врач - загляните сюда</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="footer2-wrapper content-wrapper">
+            <div class="wrapper">
+                <footer class="footer2">
+                    <h4>ИП Константинопольский К.К., 2023</h4>
+                    <h5>Политика обработки персональных данных</h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+<div class="image-popup" style="display: none;">
+    <div class="image-popup__overlay"></div>
+    <img class="image-popup__img" src="" alt="popup image">
+    <button class="image-popup__arrow left">&#10094;</button>
+    <button class="image-popup__arrow right">&#10095;</button>
+</div>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/popup2.js"></script>
+    <script src="../js/card-slider.js"></script>
+    <script src="../js/card-margin.js"></script>
+
+</body>
+</html>
