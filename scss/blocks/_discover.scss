@@ -1,0 +1,122 @@
+.discover-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.discover{
+    background-color: var(--white);
+    padding-top: fluid-prop(100, 50, 1920, 390);
+    padding-bottom: fluid-prop(226, 176, 1920, 630);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        @media (max-width: 630px) {
+            padding-bottom: fluid-prop(100, 50, 1920, 390);
+        }
+        @media (max-width: 1800px) {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+}
+.discover__content{
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    & h2{
+        margin-top: 8px;
+    }
+    & p{
+        margin-top: fluid-prop(40, 24, 1920, 390);
+    }
+    & a{
+        margin-top: fluid-prop(40, 24, 1920, 390);
+        color: var(--white);
+    }
+}
+.discover__img{
+    transition: all 0.4s;
+    position: relative;
+    width: 100%;
+    & a:nth-child(2){
+        position: absolute;
+        top: 130px;
+        left: 120px;
+            @media (max-width: 630px) {
+                display: none;
+            }
+    }
+    & a:nth-child(1){
+        @media (max-width: 630px) {
+            width: 100%;
+                & img:nth-child(1){
+                    width: 100%;
+                }
+        }
+    }
+}
+.discover__img-item{
+    position: relative;
+    transition: all 0.4s;
+    width: fit-content;
+    opacity: 100%;
+    &:hover{
+        & img{
+            transition: all 0.5s;
+        }
+    }
+    & img:nth-child(1){
+        min-width: 350px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 24px;
+            @media (max-width: 630px) {
+                min-width: auto;
+            }
+    }
+    & img:nth-child(2){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 46%;
+    }
+    &:hover{
+        & img:nth-child(1) {
+            filter: brightness(80%);
+            z-index: 3;
+        }
+        & img:nth-child(2) {
+            z-index: 3;
+        }
+    }
+}
+
+
+.discover__iframe{
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color:#1a3e3eda;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: fluid-prop(400, 16, 1920, 390);
+    padding-left: fluid-prop(400, 16, 1920, 390);
+}
+.discover__iframe-con{
+    aspect-ratio: 1.77778 / 1;
+    width: 100%;
+    position: relative;
+    & iframe{
+        width: 100%;
+        height: 100%;
+    }
+    & a:nth-child(1){
+        position: absolute;
+        right: 15px;
+        top: -30px;
+    }
+}

@@ -1,0 +1,116 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    list-style: none;
+}
+body.noscroll {
+    overflow: hidden;
+}
+html {
+    scrollbar-gutter: stable;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    
+}
+
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+a{
+    display: flex;
+    width: fit-content;
+}
+
+// background-size: contain;
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-position: center;
+
+
+
+
+@mixin fluid-text($max: 48, $min: 16) {
+    $maxViewportWidth: 1920;
+    $minViewportWidth: 360;
+
+    $maxSize: math.div($max, 16);
+    $minSize: math.div($min, 16);
+    $maxWidth: math.div($maxViewportWidth, 16);
+    $minWidth: math.div($minViewportWidth, 16);
+
+    $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+    $yAxisIntersection: -$minWidth * $slope + $minSize;
+
+    font-size: clamp(#{$minSize * 1rem},
+        #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
+        #{$maxSize * 1rem});
+}
+
+// h1{
+//     @include fluid-text(40, 28)
+// }
+
+
+
+@function fluid-prop($max, $min, $maxVW: 1920, $minVW: 390) {
+  $slope: ($max - $min) / ($maxVW - $minVW);
+  $yAxisIntersection: $min - $slope * $minVW;
+
+  @return clamp(
+    #{$min}px,
+    #{$yAxisIntersection}px + #{$slope * 100}vw,
+    #{$max}px
+  );
+}
+// h1 {
+//     padding-right: fluid-prop(size1, size2, width1, width2);
+// }

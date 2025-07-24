@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../fonts/NEXT\ ART_Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../fonts/NEXT\ ART_Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../fonts/NEXT\ ART_SemiBold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../fonts/NEXT\ ART_Bold.otf);
+    font-weight: 700;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --white: #FDFDFD;
+    --second-white: #F3F5F4;
+    --yellow: #F2BE22;
+    --dark: #18121E;
+    --green: #1A3E3E;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--dark);
+}
+.site-con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.wrapper{
+    flex-basis: 1920px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-left: fluid-prop(370, 16);
+    padding-right: fluid-prop(370, 16);
+    overflow-x: hidden;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.a-btn{
+    background-color: var(--green);
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 0.012em;
+    line-height: 20px;
+    transition: all 0.5s;
+    border: 1px transparent solid;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    &:hover{
+        border: 1px var(--green) solid;
+        background-color: transparent;
+        color: var(--green);
+    }
+    &:active{
+        background-color: var(--green);
+        color: var(--white);
+        opacity: 0.5;
+    }
+}
+.a-btn-small{
+    padding: 12px 24px;
+}
+.a-btn-big {
+    padding: 16px 36px;
+}
+.a-btn-white{
+    background-color: var(--white);
+    color: var(--green);
+    transition: all 0.5s;
+    &:hover{
+        background-color: transparent;
+        color: var(--white);
+    }
+}
+
+h1{
+    font-family: NEXT ART;
+    font-weight: 700;
+    @include fluid-text(50, 28);
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+h2{
+    font-weight: 800;
+    @include fluid-text(32, 24);
+    line-height: 120%;
+}
+h3{
+    font-size: fluid-prop(24, 18);
+    line-height: 120%;
+    font-weight: 700;
+}
+h4{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--green);
+}
+h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.012em;
+}
+h6{
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+span{
+    @include fluid-text(24, 16);
+    color: var(--yellow);
+    line-height: 20px;
+}
+p{
+    @include fluid-text(18, 16);
+    line-height: 150%;
+}

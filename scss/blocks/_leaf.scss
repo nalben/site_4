@@ -1,0 +1,95 @@
+.leaf-wrapper{
+    background-color: var(--second-white);
+    padding-top: fluid-prop(80, 50, 1920, 390);
+    padding-bottom: fluid-prop(100, 50, 1920, 390);
+}
+.leaf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    @media (max-width: 1800px) {
+        flex-direction: column;
+    }
+}
+.leaf__content{
+    flex-basis: 580px;
+    @media (max-width: 1800px) {
+        flex-basis: auto;
+        max-width: 580px;
+    }
+    & h2{
+        margin-top: 8px;
+    }
+    & p:nth-child(3){
+        margin-top: fluid-prop(40, 32, 1920, 390);
+    }
+    & a{
+        color: var(--white);
+        margin-top: fluid-prop(40, 32, 1920, 390);
+    }
+}
+.leaf__item{
+    margin-top: fluid-prop(40, 32, 1920, 390);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: start;
+    & p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.leaf__item-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.leaf__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: start;
+    max-width: 510px;
+    gap: 10px;
+    @media (max-width: 720px) {
+        display: none;
+    }
+    & img{
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+        transition: all 0.5s;
+        &:hover{
+            filter: brightness(80%);
+        }
+    }
+    & img:nth-child(1){
+        border-radius: 0px 50px 0px 50px;
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+    & img:nth-child(2){
+        border-radius: 50px 0px 50px 0px;
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+    & img:nth-child(3){
+        border-radius: 50px 0px 50px 0px;
+        &:hover{
+            transform: translateY(10px);
+        }
+    }
+    & img:nth-child(4){
+        border-radius: 0px 50px 0px 50px;
+        &:hover{
+            transform: translateY(10px);
+        }
+    }
+}
