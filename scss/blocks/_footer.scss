@@ -218,6 +218,7 @@
     padding-block: fluid-prop(20, 24);
     display: flex;
     justify-content: space-between;
+    text-align: center;
     
     @media (max-width: 930px) {
         flex-direction: column;

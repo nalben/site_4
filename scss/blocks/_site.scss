@@ -99,14 +99,14 @@ body {
 h1{
     font-family: NEXT ART;
     font-weight: 700;
-    @include fluid-text(50, 28);
+    font-size: fluid-prop(50, 23, 1920, 320);
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--white);
 }
 h2{
     font-weight: 800;
-    @include fluid-text(32, 24);
+    font-size: fluid-prop(32, 24);
     line-height: 120%;
 }
 h3{
