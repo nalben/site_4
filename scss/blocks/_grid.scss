@@ -140,7 +140,7 @@
 
 // попап
 
-.image-popup {
+.image-viewer {
     position: fixed;
     top: 0;
     left: 0;
@@ -156,23 +156,23 @@
     transition: opacity 0.3s ease;
 }
 
-.image-popup.active {
+.image-viewer.active {
     opacity: 1;
     pointer-events: auto;
 }
 
-.image-popup__img {
+.image-viewer__img {
     max-width: 90%;
     max-height: 90%;
     transition: transform 0.3s ease;
     transform: scale(0.95);
 }
 
-.image-popup.active .image-popup__img {
+.image-viewer.active .image-viewer__img {
     transform: scale(1);
 }
 
-.image-popup__arrow {
+.image-viewer__arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -185,15 +185,15 @@
     z-index: 10;
 }
 
-.image-popup__arrow.left {
+.image-viewer__arrow.left {
     left: 10px;
 }
 
-.image-popup__arrow.right {
+.image-viewer__arrow.right {
     right: 10px;
 }
 
-.image-popup__overlay {
+.image-viewer__overlay {
     position: absolute;
     inset: 0;
     cursor: pointer;
