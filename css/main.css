@@ -175,7 +175,7 @@ body {
 h1 {
   font-family: NEXT ART;
   font-weight: 700;
-  font-size: clamp(1.75rem, 1.4326923077rem + 1.4102564103vw, 3.125rem);
+  font-size: clamp(23px, 17.6px + 1.6875vw, 50px);
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--white);
@@ -183,7 +183,7 @@ h1 {
 
 h2 {
   font-weight: 800;
-  font-size: clamp(1.5rem, 1.3846153846rem + 0.5128205128vw, 2rem);
+  font-size: clamp(24px, 21.9607843137px + 0.522875817vw, 32px);
   line-height: 120%;
 }
 
@@ -1159,6 +1159,7 @@ body.lock {
   padding-block: clamp(24px, 25.0196078431px + -0.2614379085vw, 20px);
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 @media (max-width: 930px) {
   .footer2 {
